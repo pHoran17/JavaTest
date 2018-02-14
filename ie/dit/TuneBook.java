@@ -45,8 +45,7 @@ public class TuneBook
 			}
 		}    
 	}
-		//loadTuneBook();
-	}
+
 	public String toString()
 	{
 		String s = "";
@@ -58,7 +57,7 @@ public class TuneBook
 	}
 	public Tune findTune(String title)
 	{
-		String search = "":
+		String search = "";
 		for (String tune:tunes)
 		{
 			if(boolean contains(title) == true)
@@ -71,6 +70,7 @@ public class TuneBook
 			}
 		}
 	}
+	
 	public static void main(String[] args)
     {
         TuneBook tb = new TuneBook("hnj0.abc");
@@ -78,6 +78,6 @@ public class TuneBook
 
         Tune t = tb.findTune("Scotsman over the Border");
         t.play();
-    }
-		
+    }	
 }
+	
