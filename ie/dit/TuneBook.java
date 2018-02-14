@@ -60,7 +60,7 @@ public class TuneBook
 		String search = "";
 		for (String tune:tunes)
 		{
-			if(boolean contains(title) == true)
+			if(boolean contains(title))
 			{
 				System.out.println(tune);
 			}
