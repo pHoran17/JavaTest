@@ -22,6 +22,7 @@ public class TuneBook
 			{
 				//Tune tune = new Tune(1);
 				tunes.add(1);
+				
 				System.out.println(l);
 			}
 		}
@@ -46,8 +47,24 @@ public class TuneBook
 	}
 		//loadTuneBook();
 	}
-	
-	public void loadTuneBook()
+	public String toString()
 	{
+		String s = "";
+		for(String tune:tunes)
+		{	
+			s += tune.x + "\n " + tune.title + "\n " + tune.altTitle + "\n" + tune.notation + "\n";
+		}
+		return s;
+	}
+	public Tune findTune(String title)
+	{
+		String search = "":
+		System.out.println("Enter a song you wish to search for\n");
+		search = 
+		for (String tune:tunes)
+		{
+			
+		}
+	}
 		
 }

@@ -29,14 +29,18 @@ public class Tune
 		String song = "";
 		for (int i=0; i >=100;i++)
 		{
-			song += x + ", " + title + ", " + altTitle + "\n";
-			if (altTitle == NULL)
+			
+			if (altTitle == null)
 			{
 				song += x + ", " + title + "\n";
 			}
+			else
+			{
+				song += x + ", " + title + ", " + altTitle + "\n";
+			}
 			
 		}
-		
+		return song;
 		
 	}
 	
