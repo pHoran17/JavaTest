@@ -43,5 +43,12 @@ public class Tune
 		return song;
 		
 	}
-	
+	public void play()
+	{
+		System.out.println(notation);
+	}
+	interface Player
+	{
+		void play();
+	}
 }

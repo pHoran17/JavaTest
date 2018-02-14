@@ -9,7 +9,7 @@ public class TuneBook
 	
 	public TuneBook(String file)
 	{
-		String file = "hnj0.abc";
+		//String file = "hnj0.abc";
 		
 		BufferedReader inputStream = null;
 		
@@ -59,12 +59,25 @@ public class TuneBook
 	public Tune findTune(String title)
 	{
 		String search = "":
-		System.out.println("Enter a song you wish to search for\n");
-		search = 
 		for (String tune:tunes)
 		{
-			
+			if(boolean contains(title) == true)
+			{
+				System.out.println(tune);
+			}
+			else
+			{
+				System.out.println("Song not found\n");
+			}
 		}
 	}
+	public static void main(String[] args)
+    {
+        TuneBook tb = new TuneBook("hnj0.abc");
+        System.out.println(tb);
+
+        Tune t = tb.findTune("Scotsman over the Border");
+        t.play();
+    }
 		
 }
